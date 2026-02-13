@@ -10,7 +10,6 @@
     <link rel="shortcut icon"
       href="media/images/Berlitz_DigitalSchool_Franchise_Logo_Yellow_Cutout_RGB.png"
       type="image/x-icon">
-    <!-- Optional font (swap/remove if you use your own brand font) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -67,6 +66,7 @@
         <nav class="nav" aria-label="Primary navigation">
           <a class="nav__link" href="#about">About us</a>
           <a class="nav__link" href="#programs">Programs</a>
+          <a class="nav__link" href="#">Houses Edutainment</a>
           <a class="nav__link" href="#method">Method</a>
           <a class="nav__link" href="#news">News</a>
           <a class="pill pill--primary" target="_blank"
@@ -80,11 +80,12 @@
       <section class="hero" id="top">
         <div class="container hero__inner ">
           <div class="hero__content py-lg-4">
-            <h2 class="hero__title mt-lg-5">Helping children become confident digital
+            <h2 class="hero__title mt-lg-5">Helping children become confident
+              digital
               creators — not passive technology users</h2>
-            <div class="d-flex align-items-center p-3">
+            <div class="d-flex align-items-center  p-3">
 
-              <div class="hero-contact__right ">
+              <div class="hero-contact__right d-flex justify-content-center">
                 <a class="pill pill--primary" href="#contact"
                   id="contactBtn">Contact Us</a>
 
@@ -189,15 +190,63 @@
           </article>
         </div>
 
-        <h2 class="section-title">
-          Our tools and methodologies, backed by years of expertise,
-          ensure top-quality education
-        </h2>
+      </div>
+    </section>
+    <!-- Houses Edutainment Platform (Video Background) -->
+    <section class="section video-hero" id="houses">
+      <div class="video-hero__bg" aria-hidden="true">
+        <video class="video-hero__video" autoplay muted loop playsinline>
+          <source
+            src="media/Edutainment.mp4"
+            type="video/mp4" />
+        </video>
+        <div class="video-hero__overlay"></div>
+      </div>
+
+      <div class="container video-hero__content">
+        <h2 class="center-title video-hero__title">The Houses Edutainment
+          Platform</h2>
+        <p class="center-subtitle video-hero__subtitle">Where Learning Becomes a
+          Journey</p>
+
+        <div class="row g-4 mt-2">
+          <div class="col-12 col-lg-8">
+            <p class="video-hero__text">
+              The Houses Platform is the digital heart of Digital School by
+              Berlitz. Students don’t just attend classes —
+              they belong to a community, progress with purpose, and grow with
+              confidence.
+            </p>
+
+            <ul class="video-hero__list">
+              <li><span class="video-hero__dot"
+                  aria-hidden="true">•</span>Motivation through real
+                progress</li>
+              <li><span class="video-hero__dot" aria-hidden="true">•</span>Safe,
+                structured digital environment</li>
+              <li><span class="video-hero__dot"
+                  aria-hidden="true">•</span>Recognition through projects and
+                milestones</li>
+            </ul>
+
+            <div class="video-hero__actions">
+              <a class="pill pill--outline"
+                href="https://drive.google.com/file/d/1aRGjh-8TP7PCTL5rZWFHq_8io9ju1IF6/view?usp=drive_link"
+                target="_blank"
+                rel="noopener">Watch how it works</a>
+              <a class="pill pill--primary" href="#">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Stats -->
     <section class="stats">
+      <h2 class="section-title mb-5">
+        Our tools and methodologies, backed by years of expertise,
+        ensure top-quality education
+      </h2>
       <div class="container stats__inner">
         <div class="stat">
           <div class="stat__label">Founded</div>
@@ -249,9 +298,8 @@
             <div class="shape shape--c"></div>
             <div class="media-card">
               <div class="media-card__mock">
-                <div class="mock__tag">AI</div>
-                <div class="mock__screen"></div>
-                <div class="mock__person"></div>
+                <img src="media/images/about-section1.jpeg"
+                  alt="Coding and digital courses">
               </div>
             </div>
           </div>
@@ -280,7 +328,10 @@
             <div class="shape shape--b"></div>
             <div class="shape shape--c"></div>
             <div class="media-card media-card--wide">
-              <div class="media-card__mock media-card__mock--globe"></div>
+              <div class="media-card__mock media-card__mock--globe">
+                <img src="media/images/about-section2.jpeg"
+                  alt="Berlitz Digital School world">
+              </div>
             </div>
           </div>
         </div>
@@ -302,7 +353,10 @@
             <div class="shape shape--a"></div>
             <div class="shape shape--c"></div>
             <div class="media-card">
-              <div class="media-card__mock media-card__mock--chip"></div>
+              <div class="media-card__mock media-card__mock--chip">
+                <img src="media/images/about-section3.jpeg"
+                  alt="Artificial Intelligence">
+              </div>
             </div>
           </div>
         </div>
@@ -321,8 +375,9 @@
 
         <div class="program-grid">
           <article class="program-card">
-            <div class="program-card__img program-card__img--courses"
-              aria-hidden="true"></div>
+            <div class="program-card__img program-card__img--courses">
+              <img src="media/images/programs-courses.jpeg" alt="Courses">
+            </div>
             <h3>Courses</h3>
             <p>During school semesters, best for thorough knowledge of
               programming and digital literacy.</p>
@@ -330,8 +385,9 @@
           </article>
 
           <article class="program-card">
-            <div class="program-card__img program-card__img--demo"
-              aria-hidden="true"></div>
+            <div class="program-card__img program-card__img--demo">
+              <img src="media/images/programs-demos.jpeg" alt="Demo lesson">
+            </div>
             <h3>Demo lesson</h3>
             <p>Try it and bring home the experience. We’ll show you why we’re
               the best choice.</p>
@@ -339,8 +395,9 @@
           </article>
 
           <article class="program-card">
-            <div class="program-card__img program-card__img--camps"
-              aria-hidden="true"></div>
+            <div class="program-card__img program-card__img--camps">
+              <img src="media/images/programs-camps.jpeg" alt="Camps">
+            </div>
             <h3>Camps</h3>
             <p>Seasonal camps: AI, games, apps, robotics, creative tools —
               lots of FUN.</p>
@@ -348,8 +405,9 @@
           </article>
 
           <article class="program-card">
-            <div class="program-card__img program-card__img--workshops"
-              aria-hidden="true"></div>
+            <div class="program-card__img program-card__img--workshops">
+              <img src="media/images/program-workshops.jpeg" alt="Workshops">
+            </div>
             <h3>Workshops</h3>
             <p>All year long for creative minds who want to harness
               imagination and build real projects.</p>
@@ -366,76 +424,103 @@
     </section>
 
     <!-- Testimonials -->
+
     <section class="section section--alt">
       <div class="container">
         <h2 class="center-title">Said about us</h2>
 
-        <div class="testimonial-grid">
-          <article class="testimonial testimonial--sky">
-            <div class="testimonial__top">
-              <div class="quote" aria-hidden="true">“</div>
-              <div>
-                <div class="testimonial__name">Isabella, Grade 6</div>
-                <div class="testimonial__meta">About our Courses</div>
-                <div class="stars" aria-label="5 out of 5 stars">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-            <p>
-              It’s not always about doing only what’s expected; we can let our
-              imagination run wild too.
-              I’ve always loved that. 🙂
-            </p>
-          </article>
+        <div class="testimonial-carousel">
+          <div class="testimonial-track">
 
-          <article class="testimonial testimonial--pink">
-            <div class="testimonial__top">
-              <div class="quote" aria-hidden="true">“</div>
-              <div>
-                <div class="testimonial__name">Martin, Grade 4</div>
-                <div class="testimonial__meta">About our Courses</div>
-                <div class="stars" aria-label="5 out of 5 stars">
-                  ★★★★★
+            <article class="testimonial testimonial--sky">
+              <div class="testimonial__top">
+                <div class="quote">“</div>
+                <div>
+                  <div class="testimonial__name">Isabella, Grade 6</div>
+                  <div class="testimonial__meta">About our Courses</div>
+                  <div class="stars">★★★★★</div>
                 </div>
               </div>
-            </div>
-            <p>
-              It teaches you the basics, and even more. I gained a lot of
-              knowledge and could work as a
-              programmer
-              on my favorite games.
-            </p>
-          </article>
+              <p>It’s not always about doing only what’s expected; we can let
+                our imagination run wild too.</p>
+            </article>
 
-          <article class="testimonial testimonial--lime">
-            <div class="testimonial__top">
-              <div class="quote" aria-hidden="true">“</div>
-              <div>
-                <div class="testimonial__name">Maria, Mom of 1</div>
-                <div class="testimonial__meta">About our Camps</div>
-                <div class="stars" aria-label="5 out of 5 stars">
-                  ★★★★★
+            <article class="testimonial testimonial--pink">
+              <div class="testimonial__top">
+                <div class="quote">“</div>
+                <div>
+                  <div class="testimonial__name">Martin, Grade 4</div>
+                  <div class="testimonial__meta">About our Courses</div>
+                  <div class="stars">★★★★★</div>
                 </div>
               </div>
-            </div>
-            <p>
-              My son started out worried, but by the last few days he didn’t
-              want to come home because he
-              enjoyed it so much.
-              He learned a lot, made friends, and kept showing us what he
-              built. Thank you! 🙏
-            </p>
-          </article>
+              <p>It teaches you the basics and even more. I gained a lot of
+                knowledge and confidence.</p>
+            </article>
+
+            <article class="testimonial testimonial--lime">
+              <div class="testimonial__top">
+                <div class="quote">“</div>
+                <div>
+                  <div class="testimonial__name">Maria, Mom of 1</div>
+                  <div class="testimonial__meta">About our Camps</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>My son didn’t want to come home. He learned a lot and made new
+                friends.</p>
+            </article>
+
+            <article class="testimonial testimonial--sky">
+              <div class="testimonial__top">
+                <div class="quote">“</div>
+                <div>
+                  <div class="testimonial__name">Liam, Grade 5</div>
+                  <div class="testimonial__meta">About our Courses</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>The lessons were fun and easy to follow. I loved building my
+                own games.</p>
+            </article>
+
+            <article class="testimonial testimonial--pink">
+              <div class="testimonial__top">
+                <div class="quote">“</div>
+                <div>
+                  <div class="testimonial__name">Sophia, Parent</div>
+                  <div class="testimonial__meta">About our Programs</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>Great instructors and a safe environment. Highly
+                recommended.</p>
+            </article>
+
+            <article class="testimonial testimonial--lime">
+              <div class="testimonial__top">
+                <div class="quote">“</div>
+                <div>
+                  <div class="testimonial__name">Noah, Grade 6</div>
+                  <div class="testimonial__meta">About our Courses</div>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+              <p>I learned programming while having fun. Best course ever!</p>
+            </article>
+
+          </div>
         </div>
 
-        <div class="dots" aria-hidden="true">
-          <span></span><span
-            class="is-active"></span><span></span><span></span><span></span>
+        <div class="dots">
+          <span class="is-active" data-slide="0"></span>
+          <span data-slide="1"></span>
+          <span data-slide="2"></span>
+          <span data-slide="3"></span>
         </div>
+
       </div>
     </section>
-
     <!-- Boost section -->
     <section class="section">
       <div class="container">
@@ -444,7 +529,10 @@
 
         <div class="boost-grid">
           <article class="boost">
-            <div class="boost__img boost__img--cert" aria-hidden="true"></div>
+            <div class="boost__img boost__img--cert">
+              <img src="media/images/certificate.jpeg"
+                alt="Certified curriculum">
+            </div>
             <div class="boost__body">
               <h3>World-class, certified curriculum</h3>
               <p>
@@ -457,12 +545,14 @@
           </article>
 
           <article class="boost">
-            <div class="boost__img boost__img--method" aria-hidden="true"></div>
+            <div class="boost__img boost__img--method">
+              <img src="media/images/learning methods.jpeg" alt="Our method">
+            </div>
             <div class="boost__body">
               <h3>With our method, becoming a creator is fun!</h3>
               <p>
-                Standardized teaching + inspiring environment — online and
-                in-person — designed for
+                Standardized teaching + inspiring environment online and
+                in-person designed for
                 confidence and progress.
               </p>
               <a class="pill pill--primary" href="#">LEARN MORE</a>
@@ -479,7 +569,9 @@
 
         <div class="news-grid">
           <article class="news-main">
-            <div class="news-main__img" aria-hidden="true"></div>
+            <div class="news-main__img">
+              <img src="media/images/what's new.jpeg" alt="What's new">
+            </div>
             <div class="news-main__tag">BERLITZ DIGITAL SCHOOL</div>
             <h3>How AI is changing the digital world — and what this means for
               all of us</h3>
@@ -584,7 +676,7 @@
           <div class="col-lg-8">
             <div class="card border-0 shadow rounded-4">
               <div class="card-body  px-md-4 py-md-5">
-                <form action="#" method="post" >
+                <form action="#" method="post">
                   <div class="row g-3">
                     <div class="col-md-6">
                       <label class="form-label fw-bold" for="fullName">Full
@@ -736,11 +828,11 @@
                 <small class="muted">v1.0</small>
               </div>
             </footer>
-
-            <script>
-    // optional: auto year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+            <script src="index.js"></script>
+            <a href="https://wa.me/1234567890" class="whatsapp-float"
+              target="_blank" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
           </body>
 
         </html>
