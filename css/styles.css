@@ -213,7 +213,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  padding: 1.1rem 0;
   gap: 1rem;
 }
 
@@ -239,13 +239,13 @@ h1 {
   width: 60px;
 }
 
-.brand__name {
-  font-size: 1.15rem;
-  letter-spacing: -.02em;
+h1 {
+  font-size: 1.2rem;
+
 }
 
 .brand__name--accent {
-  color: var(--magenta);
+  color: var(--cyan);
 }
 
 .nav {
@@ -299,10 +299,21 @@ h1 {
   height: calc(100vh - 145px);
   /* Replace this with your real hero image */
   background:
-    url(../media/images/hero-section.jpeg) no-repeat fixed;
-  background-size: cover;
-  background-position: center;
+    url(../media/images/Hero\ section\ -\ Copy.jpeg) no-repeat fixed;
+  background-position: center 150px;
+  background-size: 100% 100%;
 }
+
+@media (max-width:768px) {
+  .hero {
+    background:
+      url(../media/images/Hero\ for\ mobile.jpeg) no-repeat fixed;
+      background-size: 100% 100%;
+      background-position: center;
+
+  }
+}
+
 
 .hero::after {
   content: "";
@@ -419,17 +430,17 @@ h1 {
   z-index: 1;
   background: rgba(255, 255, 255, .16);
   border: 1px solid rgba(255, 255, 255, .22);
-  backdrop-filter: blur(8px);
   color: #fff;
   font-weight: 900;
   border-radius: 14px;
   padding: 10px 12px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, .18);
+
 }
 
 .hero__badge--one {
-  right: 10%;
-  top: 22%;
+  right: 5%;
+  top: 25%;
 }
 
 .hero__badge--two {
@@ -1350,10 +1361,6 @@ h1 {
   opacity: .8;
 }
 
-/* =========================
-   Minimal Icons (pure CSS)
-   (replace with real SVG icon set later)
-========================= */
 .icon {
   display: inline-block;
   width: 18px;
@@ -1361,7 +1368,6 @@ h1 {
   position: relative;
 }
 
-/* Simple: search */
 .icon-search::before {
   content: "";
   position: absolute;
