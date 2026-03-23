@@ -1698,3 +1698,236 @@ h1 {
   transform: scale(1.1);
   color: #fff;
 }
+
+/* =========================
+   Pricing Layout
+========================= */
+.pricing-card {
+  border-radius: var(--radius-lg);
+  padding: 38px 30px;
+  min-height: 100%;
+  color: var(--navy);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.pricing-card--teal {
+  border-top: 6px solid var(--teal);
+}
+
+.pricing-card--cyan {
+  border-top: 6px solid var(--cyan);
+}
+
+.pricing-card__title {
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card__desc {
+  text-align: center;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.pricing-card__periods {
+  margin-bottom: 1.5rem;
+}
+
+.pricing-period {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.period-name {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.period-price {
+  font-weight: 900;
+  font-size: 1.35rem;
+  color: var(--navy);
+}
+
+.pricing-divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 1.5rem 0;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.pricing-features li i {
+  color: var(--primary);
+  margin-top: 3px;
+}
+
+/* =========================
+   Why Digital School Section
+========================= */
+.why-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+.why-section__title {
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.why-glass-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 30px 40px;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+
+.why-glass-card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 60px;
+  height: 60px;
+  background: var(--magenta);
+  border-radius: 16px;
+  z-index: -1;
+  transform: rotate(-10deg);
+}
+
+.why-glass-card p {
+  line-height: 1.6;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.why-glass-card .highlight {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.why-feature-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  height: 100%;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+}
+
+.why-feature-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: var(--lime);
+  transition: width 0.3s ease;
+}
+
+.why-feature-card:hover::after {
+  width: 100%;
+}
+
+.why-feature-icon {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-right: 18px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 78, 255, 0.08); /* Soft primary tint */
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.why-feature-text {
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+/* Abstract tech decor elements */
+.why-decor-dots {
+  position: absolute;
+  right: -20px;
+  top: 40px;
+  width: 120px;
+  height: 120px;
+  background-image: radial-gradient(var(--line) 2px, transparent 2px);
+  background-size: 16px 16px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.why-decor-circle {
+  position: absolute;
+  left: -50px;
+  bottom: 20px;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed rgba(0, 150, 214, 0.2);
+  border-radius: 50%;
+  z-index: 1;
+  animation: rotateSlow 40s linear infinite;
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

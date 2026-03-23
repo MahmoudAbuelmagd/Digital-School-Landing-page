@@ -68,7 +68,7 @@
           <a class="nav__link" href="#programs">Programs</a>
           <a class="nav__link" href="#">Houses Edutainment</a>
           <a class="nav__link" href="#method">Method</a>
-          <a class="nav__link" href="#news">News</a>
+          <a class="nav__link" href="#prices">Prices</a>
           <a class="pill pill--primary" target="_blank"
             href="https://maps.app.goo.gl/1vDeKZDfzDRsUp1y6">Our Location</a>
         </nav>
@@ -138,7 +138,7 @@
     <section class="section section--tight">
       <div class="container">
         <p class="lead">
-          Digital School by Berlitz teaches <strong>AI, coding, creative tech,
+          Digital School by <span class="brand__name--accent"> Berlitz</span> teaches <strong>AI, coding, creative tech,
             and digital literacy</strong> —
           one of the most effective ways to build strong logical and critical
           thinking —
@@ -148,50 +148,77 @@
       </div>
     </section>
 
-    <!-- 4 CTA cards -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="cta-grid">
-          <article class="cta-card cta-card--blue">
-            <h3>Courses</h3>
-            <p>Project-based AI and coding courses for learners.</p>
-            <a class="pill pill--white" href="#">REGISTER</a>
-            <div class="cta-card__art" aria-hidden="true">
-              <div class="art art--laptop"></div>
-            </div>
-          </article>
+    <!-- Why Digital School -->
+    <section class="why-section" id="why-us">
+      <!-- Decorative background elements -->
+      <div class="why-decor-dots"></div>
+      <div class="why-decor-circle"></div>
 
-          <article class="cta-card cta-card--magenta">
-            <h3>Free trial</h3>
-            <p>Try a demo lesson and see the experience firsthand.</p>
-            <a class="pill pill--white" href="#">MORE INFO</a>
-            <div class="cta-card__art" aria-hidden="true">
-              <div class="art art--spark"></div>
+      <div class="container position-relative" style="z-index: 2;">
+        <h2 class="why-section__title">Why Digital School?</h2>
+        
+        <div class="row g-4 align-items-center mt-2">
+          <!-- Text Column -->
+          <div class="col-lg-6">
+            <div class="why-glass-card">
+              <p class="mb-0 fs-5">
+                We make learning to code exciting and effective by combining gamified, story-driven lessons with personalized learning paths all backed by Berlitz’s <span class="highlight">147 years</span> of educational expertise.
+              </p>
             </div>
-          </article>
+          </div>
+          
+          <!-- Features Grid Column -->
+          <div class="col-lg-6">
+            <div class="row g-3">
+              
+              <div class="col-sm-6">
+                <div class="why-feature-card">
+                  <div class="why-feature-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                  <div class="why-feature-text">Story-Driven<br>Curriculum</div>
+                </div>
+              </div>
 
-          <article class="cta-card cta-card--cyan">
-            <h3>For schools</h3>
-            <p>Bring digital literacy and AI education to your campus.</p>
-            <a class="pill pill--white" href="#">READ MORE</a>
-            <div class="cta-card__art" aria-hidden="true">
-              <div class="art art--map"></div>
-            </div>
-          </article>
+              <div class="col-sm-6">
+                <div class="why-feature-card">
+                  <div class="why-feature-icon"><i class="fa-solid fa-gamepad"></i></div>
+                  <div class="why-feature-text">Gamified Learning<br>Experience</div>
+                </div>
+              </div>
 
-          <article class="cta-card cta-card--teal">
-            <h3>Prices</h3>
-            <p>Fees for courses, camps, and workshops.</p>
-            <a class="pill pill--white" href="#">FIND LOCATION</a>
-            <div class="cta-card__art" aria-hidden="true">
-              <div class="art art--money"></div>
+              <div class="col-sm-6">
+                <div class="why-feature-card">
+                  <div class="why-feature-icon"><i class="fa-solid fa-route"></i></div>
+                  <div class="why-feature-text">Personalized<br>Learning Paths</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="why-feature-card">
+                  <div class="why-feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                  <div class="why-feature-text">Powered by<br>Berlitz</div>
+                </div>
+              </div>
+              
+              <div class="col-sm-6">
+                <div class="why-feature-card">
+                  <div class="why-feature-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                  <div class="why-feature-text">Real-World<br>Skills</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="why-feature-card">
+                  <div class="why-feature-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                  <div class="why-feature-text">Collaboration and<br>Social Learning</div>
+                </div>
+              </div>
+
             </div>
-          </article>
+          </div>
         </div>
-
       </div>
     </section>
-    <!-- Houses Edutainment Platform (Video Background) -->
+    <!-- Houses Edutainment Platform -->
     <section class="section video-hero" id="houses">
       <div class="video-hero__bg" aria-hidden="true">
         <video class="video-hero__video" autoplay muted loop playsinline>
@@ -202,38 +229,35 @@
         <div class="video-hero__overlay"></div>
       </div>
 
-      <div class="container video-hero__content">
-        <h2 class="center-title video-hero__title">The Houses Edutainment
-          Platform</h2>
-        <p class="center-subtitle video-hero__subtitle">Where Learning Becomes a
-          Journey</p>
+      <div class="container split video-hero__content">
+        <div class="split__text text-white">
+          <h2 class="mb-2 text-white" style="color: #fff !important;">The Houses Edutainment Platform</h2>
+          <p class="fw-bold fs-5 mb-3" style="color: rgba(255,255,255,0.9);">Where Learning Becomes a Journey</p>
+          <p class="mb-4" style="color: rgba(255,255,255,0.95);">
+            The Houses Platform is the digital heart of Digital School by
+            Berlitz. Students don’t just attend classes —
+            they belong to a community, progress with purpose, and grow with
+            confidence.
+          </p>
 
-        <div class="row g-4 mt-2">
-          <div class="col-12 col-lg-8">
-            <p class="video-hero__text">
-              The Houses Platform is the digital heart of Digital School by
-              Berlitz. Students don’t just attend classes —
-              they belong to a community, progress with purpose, and grow with
-              confidence.
-            </p>
+          <ul class="pricing-features mb-4">
+            <li><i class="fa-solid fa-circle-check fs-5 text-primary"></i> <span class="fw-bold text-white">Motivation through real progress</span></li>
+            <li><i class="fa-solid fa-circle-check fs-5 text-primary"></i> <span class="fw-bold text-white">Safe, structured digital environment</span></li>
+            <li><i class="fa-solid fa-circle-check fs-5 text-primary"></i> <span class="fw-bold text-white">Recognition through projects and milestones</span></li>
+            <li><i class="fa-solid fa-circle-check fs-5 text-primary"></i> <span class="fw-bold text-white">Assessments are conducted in each session based on the topic covered  </span></li>
+          </ul>
 
-            <ul class="video-hero__list">
-              <li><span class="video-hero__dot"
-                  aria-hidden="true">•</span>Motivation through real
-                progress</li>
-              <li><span class="video-hero__dot" aria-hidden="true">•</span>Safe,
-                structured digital environment</li>
-              <li><span class="video-hero__dot"
-                  aria-hidden="true">•</span>Recognition through projects and
-                milestones</li>
-            </ul>
+        </div>
 
-            <div class="video-hero__actions">
-              <a class="pill pill--outline"
-                href="https://drive.google.com/file/d/1aRGjh-8TP7PCTL5rZWFHq_8io9ju1IF6/view?usp=drive_link"
-                target="_blank"
-                rel="noopener">Watch how it works</a>
-              <a class="pill pill--primary" href="#">LEARN MORE</a>
+        <div class="split__media">
+          <div class="shape-stack">
+            <div class="shape shape--a"></div>
+            <div class="shape shape--b"></div>
+            <div class="p-2 bg-white rounded-5 shadow-lg position-relative" style="z-index: 2; width: 100%;">
+              <video controls class="w-100 rounded-4 d-block" preload="metadata">
+                <source src="media/Edutainment.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -561,52 +585,88 @@
       </div>
     </section>
 
-    <!-- What's new -->
-    <section class="section section--alt" id="news">
+    <!-- Prices -->
+    <section class="section section--alt" id="prices">
       <div class="container">
-        <h2 class="center-title">What’s new</h2>
+        <h2 class="center-title">Our Prices</h2>
+        <!-- <p class="center-subtitle">
+          We introduce four sessions every month, 2 hours per week.
+        </p> -->
 
-        <div class="news-grid">
-          <article class="news-main">
-            <div class="news-main__img">
-              <img src="media/images/what's new.jpeg" alt="What's new">
-            </div>
-            <div class="news-main__tag">Digital School by Berlitz</div>
-            <h3>How AI is changing the digital world — and what this means for
-              all of us</h3>
-            <div class="news-date">December 17, 2025</div>
-            <p>
-              AI has shifted from a futuristic concept into something woven
-              into everyday routines.
-              Discover what’s changing, what matters, and how to prepare
-              learners responsibly.
-            </p>
-            <a class="pill pill--outline" href="#">Read article</a>
-          </article>
+        <div class="row g-4 justify-content-center mt-3">
+          <!-- Online Pricing -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <article class="pricing-card pricing-card--teal">
+              <h3 class="pricing-card__title">Online</h3>
+              <p class="pricing-card__desc">Interactive virtual sessions from the comfort of your home. Perfect for independent learners.</p>
+              
+              <div class="pricing-card__periods">
+                <div class="pricing-period">
+                  <span class="period-name">1 month</span>
+                  <span class="period-price">1,800</span>
+                </div>
+                <div class="pricing-period">
+                  <span class="period-name">3 months</span>
+                  <span class="period-price">3,500</span>
+                </div>
+                <div class="pricing-period">
+                  <span class="period-name">6 months</span>
+                  <span class="period-price">5,500</span>
+                </div>
+                <div class="pricing-period border-bottom-0 mb-0 pb-0">
+                  <span class="period-name">12 months</span>
+                  <span class="period-price">9,600</span>
+                </div>
+              </div>
 
-          <div class="news-side">
-            <article class="news-mini">
-              <div class="news-mini__tag">Digital School by Berlitz</div>
-              <h4>Join global Hour of Code & Hour of AI initiatives
-                again!</h4>
-              <div class="news-date">December 15, 2025</div>
-              <p>
-                Short, playful challenges and mini-projects for
-                confidence-building first experiences.
-              </p>
-              <a class="pill pill--outline" href="#">Read more</a>
+              <hr class="pricing-divider">
+
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> Live Interactive Sessions</li>
+                <li><i class="fa-solid fa-check"></i> Assessments & Quizzes</li>
+                <li><i class="fa-solid fa-check"></i> Compilation Certificate</li>
+                <li><i class="fa-solid fa-check"></i> Technical Guidance</li>
+                <li><i class="fa-solid fa-check"></i> Access to Houses Edutainment Platform</li>
+                <li><i class="fa-solid fa-check"></i> Graduation Projects</li>
+              </ul>
             </article>
+          </div>
+          
+          <!-- Offline Pricing -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <article class="pricing-card pricing-card--cyan">
+              <h3 class="pricing-card__title">Offline</h3>
+              <p class="pricing-card__desc">In-person learning with hands-on support in our inspiring and collaborative environment.</p>
 
-            <article class="news-mini">
-              <div class="news-mini__tag">Digital School by Berlitz</div>
-              <h4>Give the gift of knowledge</h4>
-              <div class="news-date">November 18, 2025</div>
-              <p>
-                A lasting gift: creativity, discovery, and real skills —
-                packed into fun learning
-                experiences.
-              </p>
-              <a class="pill pill--outline" href="#">Read more</a>
+              <div class="pricing-card__periods">
+                <div class="pricing-period">
+                  <span class="period-name">1 month</span>
+                  <span class="period-price">2,750</span>
+                </div>
+                <div class="pricing-period">
+                  <span class="period-name">3 months</span>
+                  <span class="period-price">6,600</span>
+                </div>
+                <div class="pricing-period">
+                  <span class="period-name">6 months</span>
+                  <span class="period-price">13,200</span>
+                </div>
+                <div class="pricing-period border-bottom-0 mb-0 pb-0">
+                  <span class="period-name">12 months</span>
+                  <span class="period-price">26,400</span>
+                </div>
+              </div>
+
+              <hr class="pricing-divider">
+
+              <ul class="pricing-features">
+                <li><i class="fa-solid fa-check"></i> In-Person Hands-On Sessions</li>
+                <li><i class="fa-solid fa-check"></i> Assessments & Quizzes</li>
+                <li><i class="fa-solid fa-check"></i> Compilation Certificate</li>
+                <li><i class="fa-solid fa-check"></i> On-Site Technical Guidance</li>
+                <li><i class="fa-solid fa-check"></i> Access to Houses Edutainment Platform</li>
+                <li><i class="fa-solid fa-check"></i> Graduation Projects</li>
+              </ul>
             </article>
           </div>
         </div>

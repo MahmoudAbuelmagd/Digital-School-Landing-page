@@ -131,3 +131,21 @@ dots.forEach(dot => {
 window.addEventListener("resize", () => {
   moveToSlide(currentIndex);
 });
+
+// Dynamic Hero Background Position
+document.addEventListener("DOMContentLoaded", () => {
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    window.addEventListener('scroll', () => {
+      if (window.innerWidth > 768) {
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        // The background starts at 150px to stay below the sticky header.
+        // As you scroll down, we dynamically move the background up to eliminate the white gap.
+        const newY = Math.max(0, 150 - scrollPosition);
+        hero.style.backgroundPosition = `center ${newY}px`;
+      } else {
+        hero.style.backgroundPosition = 'center';
+      }
+    });
+  }
+});
