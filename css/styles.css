@@ -2497,4 +2497,38 @@ body {
 .guidance-desc {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
+}
+
+/* Custom Floating Forms */
+.custom-form .form-floating > .form-control,
+.custom-form .form-floating > .form-select {
+  border-radius: 12px;
+  border: 1.5px solid #e0e0e0;
+  box-shadow: none;
+  background-color: #f6f8fb;
+  transition: all 0.3s ease;
+}
+
+.custom-form .form-floating > .form-control:focus,
+.custom-form .form-floating > .form-select:focus {
+  border-color: #004EFF;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(0, 78, 255, 0.15);
+}
+
+.custom-form .form-floating > label {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.custom-form .form-floating > .form-control:focus ~ label,
+.custom-form .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.custom-form .form-floating > .form-select ~ label {
+  color: #004EFF;
+  font-weight: 700;
+}
+.custom-form .invalid-feedback {
+  font-weight: 600;
+  margin-top: 6px;
+  margin-left: 5px;
 }

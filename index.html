@@ -309,7 +309,6 @@
             and responsible AI.
           </p>
           <div class="btn-row">
-            <a class="pill pill--primary" href="#">APPLY TO OPEN DAYS</a>
             <a class="pill pill--outline" href="#">FIND COURSES</a>
           </div>
         </div>
@@ -341,8 +340,7 @@
             child.
           </p>
           <div class="btn-row">
-            <a class="pill pill--primary" href="#">LEARN MORE</a>
-            <a class="pill pill--outline" href="#">FREE TRIAL</a>
+            <a class="pill pill--outline" href="#contact">FREE TRIAL SESSION</a>
           </div>
         </div>
 
@@ -368,7 +366,6 @@
             how to build with it.
             AI is integrated into our curriculum and learning platform.
           </p>
-          <a class="pill pill--primary" href="#">MORE INFO</a>
         </div>
 
         <div class="split__media">
@@ -409,12 +406,11 @@
 
           <article class="program-card">
             <div class="program-card__img program-card__img--demo">
-              <img src="media/images/programs-demos.jpeg" alt="Demo lesson">
+              <img src="media/images/programs-demos.jpeg" alt="Placement Assessment">
             </div>
-            <h3>Demo lesson</h3>
-            <p>Try it and bring home the experience. We’ll show you why we’re
-              the best choice.</p>
-            <a class="pill pill--primary" href="#">LEARN MORE</a>
+            <h3>Placement Assessment</h3>
+            <p>Start where you belong. We assess skills and recommend the best next step.</p>
+            <a class="pill pill--primary" href="placement.html">LEARN MORE</a>
           </article>
 
           <article class="program-card">
@@ -721,82 +717,91 @@
     </section>
 
     <!-- contact form -->
-    <section id="contact" class="newsletter py-5 bg-light border-top">
-      <div class="container py-2">
-        <div class="text-center mb-4">
-          <h2 class="fw-black">Contact Us</h2>
-          <p class="text-secondary fw-semibold mb-0">
-            Send one message — we’ll route it to the right team (Programs,
-            Camps, Workshops, Schools, Franchise, or Assessments).
+    <section id="contact" class="newsletter py-5 border-top bg-light position-relative">
+      <div class="container py-4 position-relative z-1">
+        <div class="text-center mb-5">
+          <div class="d-inline-block px-4 py-2 rounded-pill mb-3 shadow-sm" style="background-color: rgba(0, 78, 255, 0.1); color: #004EFF; font-weight: 800; letter-spacing: 1px;">
+            <i class="fa-solid fa-headset me-2"></i> WE'RE HERE TO HELP
+          </div>
+          <h2 class="fw-black display-4 mb-3" style="color: #1a1a1a;">Let's Build the Future Together</h2>
+          <p class="text-secondary fw-semibold mb-0 fs-5 mx-auto" style="max-width: 650px;">
+            Send one message — we’ll route it to the right team (Programs, Camps, Workshops, Schools, Franchise, or Assessments).
           </p>
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="card border-0 shadow rounded-4">
-              <div class="card-body  px-md-4 py-md-5">
-                <form action="#" method="post">
-                  <div class="row g-3">
+          <div class="col-lg-9">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden bg-white">
+              <div class="card-body px-md-5 py-md-5">
+                <form action="https://formspree.io/f/mkopygon" method="POST" class="needs-validation custom-form" novalidate>
+                  <div class="row g-4">
                     <div class="col-md-6">
-                      <label class="form-label fw-bold" for="fullName">Full
-                        name</label>
-                      <input class="form-control form-control-lg" id="fullName"
-                        name="fullName" type="text" required>
+                      <div class="form-floating">
+                        <input class="form-control" id="fullName" name="fullName" type="text" placeholder="Full name" required>
+                        <label for="fullName">Full name</label>
+                        <div class="invalid-feedback">Please provide your full name.</div>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <label class="form-label fw-bold"
-                        for="phone">Phone</label>
-                      <input class="form-control form-control-lg" id="phone"
-                        name="phone" type="tel" placeholder="+20 ..." required>
+                      <div class="form-floating">
+                        <input class="form-control" id="phone" name="phone" type="tel" placeholder="+20 ..." required>
+                        <label for="phone">Phone (+20 ...)</label>
+                        <div class="invalid-feedback">Please provide your phone number.</div>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <label class="form-label fw-bold"
-                        for="email">Email</label>
-                      <input class="form-control form-control-lg" id="email"
-                        name="email" type="email" required>
+                      <div class="form-floating">
+                        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required>
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback">Please provide a valid email.</div>
+                      </div>
                     </div>
 
                     <div class="col-md-6">
-                      <label class="form-label fw-bold" for="topic">I’m
-                        interested in</label>
-                      <select class="form-select form-select-lg" id="topic"
-                        name="topic" required>
-                        <option value selected disabled>Select an
-                          option</option>
-                        <option>Book a Free Demo Lesson</option>
-                        <option>Placement Assessment</option>
-                        <option>Courses</option>
-                        <option>Camps</option>
-                        <option>Workshops</option>
-                        <option>Houses Platform</option>
-                        <option>School Partnerships</option>
-                        <option>Franchise</option>
-                        <option>Other</option>
-                      </select>
+                      <div class="form-floating">
+                        <select class="form-select" id="topic" name="topic" required>
+                          <option value="" selected disabled>Select an option</option>
+                          <option>Placement Assessment</option>
+                          <option>Courses</option>
+                          <option>Camps</option>
+                          <option>Workshops</option>
+                          <option>Houses Platform</option>
+                          <option>School Partnerships</option>
+                          <option>Franchise</option>
+                          <option>Other</option>
+                        </select>
+                        <label for="topic">I’m interested in</label>
+                        <div class="invalid-feedback">Please select a topic.</div>
+                      </div>
                     </div>
 
                     <div class="col-12">
-                      <label class="form-label fw-bold"
-                        for="message">Message</label>
-                      <textarea class="form-control" id="message" name="message"
-                        rows="5" placeholder="Tell us what you need..."
-                        required></textarea>
+                      <div class="form-floating">
+                        <textarea class="form-control" id="message" name="message" placeholder="Tell us what you need..." style="height: 120px" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback">Please write a message.</div>
+                      </div>
                     </div>
 
-                    <div class="col-12">
-                      <button
-                        class="btn btn-primary btn-lg rounded-pill px-5 fw-black w-100 mt-3"
-                        type="submit">
-                        Send Message
+                    <input type="text" name="_gotcha" style="display:none">
+                    
+                    <div class="col-12 mt-4 pt-1">
+                      <button id="submitBtn" class="btn btn-primary btn-lg rounded-pill px-5 fw-black w-100 shadow" style="font-size: 1.15rem; padding-top: 1rem; padding-bottom: 1rem;" type="submit">
+                        Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
                       </button>
                     </div>
                   </div>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            </main>
+  </main>
 
             <!-- Footer -->
             <footer class="footer">
@@ -875,7 +880,6 @@
                     <a href="#">Courses</a>
                     <a href="#">Camps</a>
                     <a href="#">Workshops</a>
-                    <a href="#">Open days</a>
                   </div>
                 </div>
               </div>

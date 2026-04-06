@@ -149,3 +149,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Form validation logic
+(() => {
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+
+// Auto-select topic based on URL Parameter
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const topicParam = urlParams.get('topic');
+  if (topicParam) {
+    const selectEl = document.getElementById('topic');
+    if (selectEl) {
+      // Find matching option
+      for (let i = 0; i < selectEl.options.length; i++) {
+        if (selectEl.options[i].text.toLowerCase().includes(topicParam.toLowerCase())) {
+          selectEl.selectedIndex = i;
+          break;
+        }
+      }
+      
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 500);
+    }
+  }
+});
