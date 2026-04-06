@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workshops - Digital School by Berlitz</title>
+    <meta name="description"
+      content="Short, immersive workshop programs (12–15 hours) introducing high-impact digital skills." />
+    <link rel="shortcut icon"
+      href="media/images/Berlitz_DigitalSchool_Franchise_Logo_Yellow_Cutout_RGB.png"
+      type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .workshops-hero {
+        position: relative;
+        padding: 100px 0;
+        background: linear-gradient(135deg, #004EFF 0%, #1D1D1D 100%);
+        overflow: hidden;
+        color: white;
+      }
+      .workshops-hero::before {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(221, 255, 87, 0.2) 0%, rgba(255,255,255,0) 70%);
+        top: -200px;
+        right: -100px;
+        border-radius: 50%;
+        animation: pulse 6s infinite alternate;
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.8; }
+        100% { transform: scale(1.1); opacity: 1; }
+      }
+      
+      .workshop-card {
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 30px;
+        height: 100%;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        z-index: 1;
+      }
+      .workshop-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 78, 255, 0.15);
+        border-color: #DDFF57;
+      }
+      .workshop-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: linear-gradient(135deg, rgba(221, 255, 87, 0.1) 0%, rgba(0, 78, 255, 0.02) 100%);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+      .workshop-card:hover::before {
+        opacity: 1;
+      }
+      .workshop-icon-container {
+        width: 70px;
+        height: 70px;
+        border-radius: 16px;
+        background: #f0f4ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        color: #004EFF;
+        margin-bottom: 20px;
+        transition: all 0.4s ease;
+      }
+      .workshop-card:hover .workshop-icon-container {
+        background: #DDFF57;
+        color: #1D1D1D;
+        transform: rotate(-10deg) scale(1.1);
+      }
+      .workshop-title {
+        font-weight: 800;
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        color: #1d1d1d;
+      }
+      .workshop-desc {
+        color: #666;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+
+      .workshop-format-banner {
+        background: #DDFF57;
+        color: #1D1D1D;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 800;
+        margin-top: 40px;
+        box-shadow: 0 5px 15px rgba(221, 255, 87, 0.4);
+        display: inline-block;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .workshop-format-icon {
+        margin-right: 15px;
+        font-size: 1.2rem;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Top utility bar -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <a href="partnership.html" class="topbar__link">School Partnerships with us</a>
+          <a href="franchise.html" class="topbar__link">Franchise</a>
+          <a href="index.html#programs" class="topbar__link">Find a program</a>
+        </div>
+
+        <div class="topbar__right">
+          <button class="pill pill--ghost" type="button" aria-label="Select language">
+            EN <span class="chev" aria-hidden="true"></span>
+          </button>
+          <a class="topbar__icon" href="#" aria-label="Account">
+            <span class="icon icon-user" aria-hidden="true"></span>
+          </a>
+          <a class="topbar__icon" href="#" aria-label="Search">
+            <span class="icon icon-search" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main header -->
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Digital School by Berlitz Home">
+          <span class="brand__mark" aria-hidden="true"> <img src="media/images/Berlitz_DigitalSchool_Franchise_Logo_Yellow_Cutout_RGB.png" alt></span>
+          <h1> Digital School by <span class="brand__name--accent">Berlitz</span></h1>
+        </a>
+
+        <!-- Mobile nav toggle -->
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-burger" for="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="nav__link" href="index.html#about">About us</a>
+          <a class="nav__link" href="index.html#programs">Programs</a>
+          <a class="nav__link" href="index.html#houses">Houses Edutainment</a>
+          <a class="nav__link" href="index.html#method">Method</a>
+          <a class="nav__link" href="index.html#prices">Prices</a>
+          <a class="pill pill--primary" target="_blank" href="https://maps.app.goo.gl/1vDeKZDfzDRsUp1y6">Our Location</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="workshops-hero text-center">
+        <div class="container position-relative z-1">
+          <div class="badge bg-white text-dark px-3 py-2 rounded-pill mb-3 fw-bold shadow-sm" style="color: #004EFF !important;">Short & Immersive</div>
+          <h2 class="display-3 fw-black mb-4">WORKSHOPS — FOCUSED. <br><span style="color: #DDFF57;">PRACTICAL. FUTURE-READY.</span></h2>
+          <p class="lead mx-auto" style="max-width: 800px; font-weight: 500; font-size: 1.3rem; opacity: 0.9;">
+            Our workshops are short, immersive programs (12–15 hours) designed to introduce high-impact digital skills through hands-on creation.
+          </p>
+          <div class="mt-5">
+            <a href="#contact" class="pill pill--primary" style="background:#DDFF57; color:#1D1D1D; border-color:#DDFF57; font-size:1.1rem; padding: 0.8rem 2rem;">Register Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workshops Grid -->
+      <section class="py-5 bg-light" style="padding-top: 80px !important;">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-black fs-1 text-dark mb-3">Available Workshops Include</h2>
+            <div style="width: 80px; height: 5px; background: #004EFF; margin: 0 auto; border-radius: 5px;"></div>
+          </div>
+
+          <div class="row g-4">
+            
+            <!-- Workshop 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3 class="workshop-title">3D Game Development</h3>
+                <p class="workshop-desc">Students design and build interactive 3D games while learning core game mechanics, logic, and digital creativity.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="workshop-title">Introduction to Artificial Intelligence</h3>
+                <p class="workshop-desc">A beginner-friendly exploration of AI concepts, applications, and real-world use cases — helping students understand how AI works and how it shapes the world around them.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="workshop-title">Building Web Apps (No-Code)</h3>
+                <p class="workshop-desc">Students create functional web applications using no-code tools, focusing on logic, user experience, and digital problem-solving rather than syntax.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="workshop-title">Digital Marketing Essentials</h3>
+                <p class="workshop-desc">An introduction to online marketing fundamentals including content creation, social media strategy, and digital branding — tailored for young learners.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="workshop-title">Exploring Arduino</h3>
+                <p class="workshop-desc">Students explore electronics and physical computing, learning how software interacts with hardware through sensors and components.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-music"></i>
+                </div>
+                <h3 class="workshop-title">Music Production (BandLab)</h3>
+                <p class="workshop-desc">Students explore digital music creation, sound design, and basic production techniques using industry-friendly tools.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 7 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="workshop-title">Online Streaming & Content Creation</h3>
+                <p class="workshop-desc">An introduction to streaming fundamentals, digital presence, and responsible content creation in a structured, age-appropriate environment.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 8 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="workshop-title">Smart Tools</h3>
+                <p class="workshop-desc">An interactive workshop introducing students to AI, machine learning, and smart tools through hands-on projects using platforms like ChatGPT and Scratch.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 9 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3 class="workshop-title">UI/UX & Web Design Fundamentals</h3>
+                <p class="workshop-desc">An introduction to user interface and user experience design, helping students understand how digital products are designed for real users.</p>
+              </div>
+            </div>
+
+            <!-- Workshop 10 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="workshop-card">
+                <div class="workshop-icon-container">
+                  <i class="fa-solid fa-comment-dots"></i>
+                </div>
+                <h3 class="workshop-title">Building a Chatbot</h3>
+                <p class="workshop-desc">Students design and build simple chatbots while learning the basics of conversational logic, automation, and AI-driven interaction.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text-center mt-5">
+             <div class="workshop-format-banner">
+               <i class="fa-solid fa-users workshop-format-icon"></i> 
+               <i class="fa-solid fa-laptop workshop-format-icon" style="margin-left: 10px;"></i>
+               Format: In-person or live online
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form -->
+      <section id="contact" class="newsletter py-5 border-top bg-white">
+        <div class="container py-2">
+          <div class="text-center mb-4">
+            <h2 class="fw-black">Register for a Workshop</h2>
+            <p class="text-secondary fw-semibold mb-0">
+              Select the workshop you are interested in and our team will be in touch with schedule details.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="card border-0 shadow rounded-4">
+                <div class="card-body px-md-4 py-md-5">
+                  <form action="#" method="post">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label fw-bold" for="fullName">Parent / Student Name</label>
+                        <input class="form-control form-control-lg" id="fullName" name="fullName" type="text" required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-bold" for="phone">Phone</label>
+                        <input class="form-control form-control-lg" id="phone" name="phone" type="tel" placeholder="+20 ..." required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-bold" for="email">Email</label>
+                        <input class="form-control form-control-lg" id="email" name="email" type="email" required>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-bold" for="topic">Interested Workshop</label>
+                        <select class="form-select form-select-lg" id="topic" name="topic" required>
+                          <option value disabled>Select an option</option>
+                          <option selected>Workshops (General Inquiry)</option>
+                          <option>3D Game Development</option>
+                          <option>Intro to AI</option>
+                          <option>Building Web Apps</option>
+                          <option>Digital Marketing</option>
+                          <option>Exploring Arduino</option>
+                          <option>Music Production</option>
+                          <option>Online Streaming</option>
+                          <option>Smart Tools</option>
+                          <option>UI/UX & Web Design</option>
+                          <option>Building a Chatbot</option>
+                        </select>
+                      </div>
+
+                      <div class="col-12">
+                        <label class="form-label fw-bold" for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Any specific questions or preferred format (online vs in-person)?"></textarea>
+                      </div>
+
+                      <div class="col-12">
+                        <button class="btn btn-primary btn-lg rounded-pill px-5 fw-black w-100 mt-3" type="submit">
+                          Register Inquiry
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="Digital School by Berlitz Home">
+            <span class="brand__mark" aria-hidden="true"> <img src="media/images/Berlitz_DigitalSchool_Franchise_Logo_Yellow_Cutout_RGB.png" alt></span>
+            <h1> Digital School by <span class="brand__name--accent">Berlitz</span></h1>
+          </a>
+          <div class="hero-contact__social" aria-label="Social links">
+            <a class="social-btn" href="https://www.facebook.com/dsbyberlitz" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="https://www.instagram.com/dsbyberlitz" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="https://wa.me/#" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="https://www.linkedin.com/company/digital-school-by-berlitz" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="tel:#" target="_blank" rel="noopener" aria-label="phone">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer-col">
+            <h4>News</h4>
+            <a href="#">Blog & News</a>
+            <a href="#">Newsletter</a>
+            <a href="#">Press</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Information</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Contact us</a>
+            <a href="#">Cookies</a>
+            <a href="#">Downloads</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Partnerships</h4>
+            <a href="index.html#about">About us</a>
+            <a href="partnership.html">Schools</a>
+            <a href="#">Licensing</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Programs</h4>
+            <a href="index.html#programs">Courses</a>
+            <a href="index.html#programs">Camps</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="#">Open days</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <small>© <span id="year">2026</span> Digital School by Berlitz. All rights reserved.</small>
+        <small class="muted">v1.0</small>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </body>
+</html>
