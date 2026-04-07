@@ -18,58 +18,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-
-    <style>
-      .placement-hero {
-        background: linear-gradient(135deg, rgba(221, 255, 87, 0.05) 0%, rgba(0, 78, 255, 0.05) 100%), #ffffff;
-        padding-top: 150px;
-        padding-bottom: 100px;
-        overflow: hidden;
-      }
-      .placement-accent-text {
-        color: #004EFF;
-      }
-      .placement-badge {
-        display: inline-block;
-        background-color: #004EFF;
-        color: #DDFF57;
-        padding: 0.5rem 1.5rem;
-        border-radius: 50px;
-        font-weight: 800;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        margin-bottom: 2rem;
-      }
-      .feature-card {
-        background: white;
-        border-radius: 16px;
-        padding: 2.5rem 2rem;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.04);
-        height: 100%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: 1px solid rgba(0,0,0,0.03);
-      }
-      .feature-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 50px rgba(0, 78, 255, 0.1);
-      }
-      .feature-icon-wrapper {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background: rgba(221, 255, 87, 0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1.5rem;
-        font-size: 28px;
-        color: #004EFF;
-      }
-      .feature-card.alt-theme .feature-icon-wrapper {
-        background: rgba(0, 78, 255, 0.1);
-      }
-    </style>
   </head>
 
   <body>
@@ -259,29 +207,53 @@
             <a class="social-btn" href="https://www.instagram.com/dsbyberlitz" target="_blank" rel="noopener" aria-label="Instagram">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i>
             </a>
+            <a class="social-btn" href="https://wa.me/#" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="https://www.linkedin.com/company/digital-school-by-berlitz" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="tel:#" target="_blank" rel="noopener" aria-label="phone">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
 
-        <nav class="footer__links" aria-label="Footer navigation">
-          <div class="footer__col">
-            <h2 class="footer__heading">About us</h2>
-            <ul class="footer__list">
-              <li><a href="index.html#programs">Programs</a></li>
-              <li><a href="index.html#houses">Method</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+        <div class="footer__cols">
+          <div class="footer-col">
+            <h4 class="text-white fw-bold mb-3 border-bottom border-secondary pb-2 d-inline-block">Company</h4>
+            <a href="index.html#about" class="text-white-50 text-decoration-none d-block mb-2 hover-white">About us</a>
+            <a href="index.html#method" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Our Method</a>
+            <a href="index.html#prices" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Pricing</a>
+            <a href="index.html#contact" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Contact us</a>
           </div>
-          <div class="footer__col">
-            <h2 class="footer__heading">Legal</h2>
-            <ul class="footer__list">
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
+
+          <div class="footer-col">
+            <h4 class="text-white fw-bold mb-3 border-bottom border-secondary pb-2 d-inline-block">Programs</h4>
+            <a href="index.html#programs" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Courses</a>
+            <a href="camps.html" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Camps</a>
+            <a href="workshops.html" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Workshops</a>
+            <a href="placement.html" class="text-warning text-decoration-none d-block mb-2 hover-white fw-bold"><i class="fa-solid fa-crosshairs me-1"></i> Placement Assessment</a>
           </div>
-        </nav>
+
+          <div class="footer-col">
+            <h4 class="text-white fw-bold mb-3 border-bottom border-secondary pb-2 d-inline-block">Partnerships</h4>
+            <a href="partnership.html" class="text-white-50 text-decoration-none d-block mb-2 hover-white">School Partnerships</a>
+            <a href="franchise.html" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Franchise Opportunities</a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="text-white fw-bold mb-3 border-bottom border-secondary pb-2 d-inline-block">Support</h4>
+            <a href="#" class="text-white-50 text-decoration-none d-block mb-2 hover-white">FAQ</a>
+            <a href="#" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Cookies</a>
+            <a href="#" class="text-white-50 text-decoration-none d-block mb-2 hover-white">Downloads</a>
+          </div>
+        </div>
       </div>
-      <div class="container text-center mt-4">
-        <p class="text-secondary small">&copy; 2026 Digital School by Berlitz. All rights reserved.</p>
+
+      <div class="container footer__bottom pt-4 mt-4 border-top border-secondary text-center">
+        <small class="text-white-50">© <span id="year">2026</span> Digital School by Berlitz. All rights reserved.</small>
+        <small class="muted">v1.0</small>
       </div>
     </footer>
 
